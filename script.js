@@ -52,10 +52,10 @@ var RecipeApp = function () {
 
             $recipes.append(
                 '<div class="recipe col-md-6  offset-md-3 img-fluid shadow" data-id="' + recipe.id + '">' + 
-                    '<img class="recipe-img" src="' + recipe.image + '"/>' +
                     '<h4 class="text-capitalize font-italic text-center">' + recipe.name + '</h4>' +
+                    '<img class="recipe-img" src="' + recipe.image + '"/>' +
                     '<hr>' +
-                    '<h5 class="font-italic font-bold text-center">INGREDIENTS</h5>' +
+                    '<h5 class="font-italic font-bold text-center">ingredients</h5>' +
                     '<div class="input-group mb-3">' +
                         '<div class="input-group-prepend">' +
                             '<span class="add-ingredients input-group-text" id="basic-addon3">Add Ingredients</span>' +
