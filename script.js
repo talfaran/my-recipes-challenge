@@ -34,6 +34,10 @@ var RecipeApp = function () {
         recipes.push(recipe);
     };
 
+    var createIngredients = function(){
+        //add code
+    };
+
     var _getIngredients = function(recipe){
         //add code
         return "";
@@ -61,6 +65,7 @@ var RecipeApp = function () {
                             '<span class="add-ingredients input-group-text" id="basic-addon3">Add Ingredients</span>' +
                         '</div>' + 
                         '<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">' +
+                        
                     '</div>' +
                     '<ul class="ingredients">' + ingredients + '</ul>'+
                 '</div>'
