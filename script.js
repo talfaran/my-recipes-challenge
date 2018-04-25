@@ -5,9 +5,9 @@ var RecipeApp = function () {
         //     name: 'Best Chicken Soup!', 
         //     image: 'https://static01.nyt.com/images/2016/11/29/dining/recipelab-chick-noodle-still/recipelab-chick-noodle-still-master675.jpg',
         //     ingredients: [
-        //         { name: 'whole chicken', amount: '1' },
-        //         { name: 'medium carrots', amount: '6' },
-        //         { name: 'onions', amount: '3 medium' },
+        //         { name: 'whole chicken' },
+        //         { name: 'medium carrots'},
+        //         { name: 'onions' },
         //     ] 
         // }
     ];
