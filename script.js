@@ -68,10 +68,6 @@ var RecipeApp = function () {
         }
     };
 
-    var deleteIngredients = function(){
-        //add code
-    };
-
     return {
         createRecipe: createRecipe,
         renderRecipes: renderRecipes,
