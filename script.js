@@ -39,10 +39,10 @@ var RecipeApp = function () {
     };
 
     var _getIngredients = function(recipe){
-        var recipes = "";
+        var recipesHTML = "";
 
         //add code
-        return recipes;
+        return recipesHTML;
     };
 
     var renderRecipes = function () {
