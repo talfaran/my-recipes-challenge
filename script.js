@@ -39,8 +39,10 @@ var RecipeApp = function () {
     };
 
     var _getIngredients = function(recipe){
+        var recipes = "";
+
         //add code
-        return "";
+        return recipes;
     };
 
     var renderRecipes = function () {
@@ -76,7 +78,7 @@ var RecipeApp = function () {
     return {
         createRecipe: createRecipe,
         renderRecipes: renderRecipes,
-        // createIngredients: createIngredients
+        // createIngredients: createIngredients,
     }
 };
 
