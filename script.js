@@ -23,10 +23,10 @@ var RecipeApp = function () {
     var findRcpById = function (addIngrButton) {
 
         for (var i = 0; i < recipes.length; i++) {
-            if (recipes[i].id === currentRecipeId)
+            if (recipes[i].id === currentRecipeId){
                 var currentRecipe = recipes[i];
-            return currentRecipe;
-        }
+            return currentRecipe; // you return the variable outside of the if statment but inside of the foor loop  - mostly you return undefine!
+            }  }
     }
 
 
@@ -46,17 +46,17 @@ var RecipeApp = function () {
     };
 
     var createIngredients = function (currentRecipe) {
-        var $currentRecipeId = $(currentRecipe).closest('.recipe').data().id;
+        var $currentRecipeId = $(currentRecipe).closest('.recipe').data().id; // $ is standart for variables of jquery type. id is a number
         var recipe = findRcpById(currentRecipeId);
         var ingredientHTML = {
             name: $(recipe).siblings('.form-control').val()
-        }
+        } //  no seoeration between view and data
         recipe.ingredients.push(ingridient)
     };
 
-    var _getIngredients = function (recipe) {
+    var _getIngredients = function (recipe) { // should return HTML string
         for (var i = 0; i < recipe.ingredients.length; i++) {
-            var indredientsList = indredientsList + reicpe.ingredients[i].name
+            var indredientsList = indredientsList + reicpe.ingredients[i].name // you forgot the + sign/ don't defind vaiables inside a loop or an if statment
         }
     return (indredientsList);
 };
@@ -117,6 +117,6 @@ $('.add-recipe').on('click', function () {
 });
 
 $('.add-recipe').on('click', '.add-ingredients', function () {
-    findRcpByClickedBtn(this)
-    app.createIngredients(_getIngredients(this));
+   // findRcpByClickedBtn(this) // exists only inside app - app.....
+    app.createIngredients(this); // _getIngredients is not relevant.
 });
